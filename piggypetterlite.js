@@ -4,7 +4,7 @@ Piggy = new function () {
 	s.position="absolute";
 	s.height="62px";
 	s.width="88px";
-	s.backgroundImage = "url('http://www.googledrive.com/host/0B-OuwNlJcAtPVzQwZE5KWnlUdG8/piggysprite.png')";
+	s.backgroundImage = "url('piggysprite.png')";
 	s.overflow = "hidden";
 	var c=0, t;
 	var fps = 24;
@@ -17,5 +17,6 @@ Piggy = new function () {
 	this.Pet = function () {
 		if (c!=0) return;
 		t = setInterval(Next, 1000/fps)}
+	s.addEventListener('click', this.Pet)
 }
 
