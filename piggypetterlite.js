@@ -1,10 +1,11 @@
-Piggy = new function () {
-	var s = document.getElementById("PiggyFrame").style;
+HPiggy = new function () {
+	var p = document.getElementById("PiggyFrame")
+	var s = p.style;
 	console.log(s);
 	s.position="absolute";
 	s.height="62px";
 	s.width="88px";
-	s.backgroundImage = "url('piggysprite.png')";
+	s.backgroundImage = "url('https://humbabella.github.io/humba-pig-pet-lite/piggysprite.png')";
 	s.overflow = "hidden";
 	var c=0, t;
 	var fps = 24;
@@ -17,6 +18,5 @@ Piggy = new function () {
 	this.Pet = function () {
 		if (c!=0) return;
 		t = setInterval(Next, 1000/fps)}
-	s.addEventListener('click', this.Pet)
+	p.addEventListener('click', this.Pet)
 }
-
